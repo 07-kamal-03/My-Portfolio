@@ -22,7 +22,7 @@ export const Home = () => {
             <div className='currency-convertor-api home-subcontainer'>
             {/* <div> */}
             <p className='title'>Currency Convertor API project</p>
-                <a href="https://weather-reactpage.netlify.app/" target='_blank'><img src={currencyAPI} /> </a>
+                <a href="https://currency-convertor-api.netlify.app/" target='_blank'><img src={currencyAPI} /> </a>
                 {/* <iframe src="https://currency-convertor-api.netlify.app/" target="_blank" scrolling= 'no'/> */}
 
                 {/* </div> */}
