@@ -3,6 +3,7 @@ import '../css/Home.css'
 import intershipComplete from '../assets/Kamalraj D _Internship Completion_page-0001.jpg'
 import weatherAPI from '../assets/weather-api.png'
 import currencyAPI from '../assets/currency-convertor.png'
+import Resume from '../assets/Kamalraj_Resume.svg'
 
 export const Home = () => {
     return (
@@ -10,7 +11,6 @@ export const Home = () => {
             <div className='intership-completed home-subcontainer'>
             <p className='title'>Internship Completion Certificate</p>
                 <img src={intershipComplete} alt="Internship Completion" />
-                
             </div>
             <div className='weather-api home-subcontainer'>
             {/* <div> */}
@@ -26,6 +26,11 @@ export const Home = () => {
                 {/* <iframe src="https://currency-convertor-api.netlify.app/" target="_blank" scrolling= 'no'/> */}
 
                 {/* </div> */}
+            </div>
+            <div className='resume home-subcontainer'>
+            <p className='title'>Resume</p>
+                <img src={Resume} alt="Resume" />
+                
             </div>
         </div>
     )
