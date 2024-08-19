@@ -1,31 +1,13 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import '../css/Contact.css'
 import linkedin from '../assets/linkedin.png'
 import instagram from '../assets/instagram.png'
-// import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
-
-    // const form = useRef();
-
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-
-    //     emailjs
-    //         .sendForm('service_yxpso7k', 'template_zv37kxr', form.current, {
-    //             publicKey: 'LlIB7sdxlcNgeHoNf',
-    //         })
-    //         .then(
-    //             () => {
-    //                 alert('SUCCESS!');
-    //             },
-    //             (error) => {
-    //                 alert('FAILED...', error.text);
-    //             },
-    //         );
-    // };
+    const [restrictClicks, setRestrictClicks] = useState(false);
     const sendEmail = async (e) => {
         e.preventDefault();
+        setRestrictClicks(true);
     
         const formData = new FormData(e.target);
     
@@ -49,6 +31,9 @@ export const Contact = () => {
             }
         } catch (error) {
             alert('Error: ' + error.message);
+        }
+        finally {
+            setRestrictClicks(false);
         }
     };
     
@@ -103,7 +88,9 @@ export const Contact = () => {
                         <textarea id='message' name='message' rows='4' required></textarea>
                         <label htmlFor='message'>Message</label>
                     </div>
-                    <button type='submit'>Submit</button>
+                    <button type='submit' disabled={restrictClicks}>{
+                        restrictClicks? 'Sending...' : 'Send'
+                    }</button>
                 </form>
             </div>
         </div>
