@@ -165,7 +165,7 @@
     .navigation.show {
         display: block;
         position: fixed;
-        top: 18%;
+        top: 80px;
         left: 0;
         background-color: white;
     }
