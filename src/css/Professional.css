@@ -4,9 +4,9 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.professional-container.dark {
+/* .professional-container.dark {
     background-color: black;
-}
+} */
 .professional-container div {
     margin: 30px;
     flex: 1 1 35%;

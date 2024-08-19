@@ -33,8 +33,8 @@ export const Contact = () => {
             const response = await fetch('http://localhost:5000/send', {
                 method: 'POST',
                 body: JSON.stringify({
-                    from_name: formData.get('from_name'),
-                    from_email: formData.get('from_email'),
+                    fromName: formData.get('from_name'),
+                    fromEmail: formData.get('from_email'),
                     message: formData.get('message')
                 }),
                 headers: {
@@ -71,7 +71,7 @@ export const Contact = () => {
         };
     }, []);
     return (<>
-        <h1 className='contact-title'>Contact Me</h1>
+        <h1 className='contact-title'>Get in touch</h1>
         <div className='contact-container'>
             <div className='contact-info'>
                 <div className='contact-scroll-container'>

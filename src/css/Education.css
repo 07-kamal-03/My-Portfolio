@@ -4,9 +4,9 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.education-container.dark {
+/* .education-container.dark {
     background-color: black;
-}
+} */
 .education-container div {
     margin: 30px;
     /* border: 1px solid black; */
@@ -22,10 +22,10 @@ th {
     color: #ffffff;
     font-size: 20px;
 }
-th.dark {
+/* th.dark {
     background-color: rgb(255, 255, 255);
     color: #000000;
-}
+} */
 table {
     /* border: 1px solid black; */
     margin: auto;
