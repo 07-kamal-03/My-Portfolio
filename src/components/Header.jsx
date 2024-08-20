@@ -48,7 +48,7 @@ export const Header = ({ theme, setTheme }) => {
       <div className={`navigation ${theme}`}>
         <ul>
           <li className='menu-items'><Link to="/">Home</Link></li>
-          <li className='menu-items'><Link to="/about">About</Link></li>
+          <li className='menu-items'><Link to="/general">General</Link></li>
           <li className='menu-items'><Link to="/education">Education</Link></li>
           <li className='menu-items'><Link to="professional">Professional</Link></li>
           <li className='menu-items'><Link to="contact">Contact</Link></li>
