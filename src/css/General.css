@@ -46,8 +46,8 @@
 
 @media (max-width: 500px) {
     .media img {
-        width: 200px;
-        height: 200px;
+        width: 60dvw;
+        height: 60dvh;
     }
 
 }
