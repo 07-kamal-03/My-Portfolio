@@ -37,6 +37,7 @@ export const General = () => {
             stretch: 0,
             depth: 100,
             modifier: 2.5,
+            slideShadows: false,
           }}
           navigation={{ nextEl: '.arrow-forward', prevEl: '.arrow-back', clickable: true }}
           pagination={{ el: '.swiper-pagination', clickable: true }}
