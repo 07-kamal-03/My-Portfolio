@@ -12,7 +12,7 @@ export const Contact = () => {
         const formData = new FormData(e.target);
     
         try {
-            const response = await fetch('http://localhost:5000/send', {
+            const response = await fetch('https://my-portfolio-serverapi-50021942498.development.catalystappsail.in/send', {
                 method: 'POST',
                 body: JSON.stringify({
                     fromName: formData.get('from_name'),
