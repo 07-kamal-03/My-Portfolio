@@ -39,6 +39,10 @@ export const Header = ({ theme, setTheme }) => {
     document.querySelector('.navigation').classList.toggle('show');
     document.querySelector('.hamburger').classList.toggle('open');
   }
+  const closeMenuOnClick = () => {
+    document.querySelector('.navigation').classList.remove('show');
+    document.querySelector('.hamburger').classList.remove('open');
+  };
 
   return (
     <header className={`header ${theme}`}>
@@ -47,11 +51,11 @@ export const Header = ({ theme, setTheme }) => {
       </div>
       <div className={`navigation ${theme}`}>
         <ul>
-          <li className='menu-items'><Link to="/">Home</Link></li>
-          <li className='menu-items'><Link to="/general">General</Link></li>
-          <li className='menu-items'><Link to="/education">Education</Link></li>
-          <li className='menu-items'><Link to="professional">Professional</Link></li>
-          <li className='menu-items'><Link to="contact">Contact</Link></li>
+        <li className='menu-items'><Link to="/" onClick={closeMenuOnClick}>Home</Link></li>
+          <li className='menu-items'><Link to="/general" onClick={closeMenuOnClick}>General</Link></li>
+          <li className='menu-items'><Link to="/education" onClick={closeMenuOnClick}>Education</Link></li>
+          <li className='menu-items'><Link to="professional" onClick={closeMenuOnClick}>Professional</Link></li>
+          <li className='menu-items'><Link to="contact" onClick={closeMenuOnClick}>Contact</Link></li>
         </ul>
       </div>
       <div className={`search ${theme}`}>
