@@ -4,13 +4,16 @@ import intershipComplete from '../assets/Kamalraj D _Internship Completion_page-
 import weatherAPI from '../assets/weather-api.png'
 import currencyAPI from '../assets/currency-convertor.png'
 import Resume from '../assets/Kamalraj_Resume.svg'
+import ResumePdf from '../assets/Kamalraj_Resume.pdf'
 
 export const Home = () => {
     return (
         <div className='home-container'>
             <div className='resume home-subcontainer'>
                 <p className='title'>Resume</p>
-                <img src={Resume} alt="Resume" />
+                <a href={ResumePdf} download="Kamalraj_Resume.pdf">
+                    <img src={Resume} alt="Resume" />
+                </a>
             </div>
             <div className='intership-completed home-subcontainer'>
                 <p className='title'>Internship Completion Certificate</p>
