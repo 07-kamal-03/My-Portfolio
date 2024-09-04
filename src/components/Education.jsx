@@ -1,117 +1,27 @@
-import React from 'react'
-import '../css/Education.css'
+import { EDUCATION } from '../constants';
+import { motion } from 'framer-motion';
 
-export const Education = ({ theme }) => {
+export const Education = () => {
     return (
-        <div className={`education-container ${theme}`}>
-            <div className='college'>
-                <table>
-                    <thead>
-                        <th colSpan={2} className={`${theme}`}>Bachelor's Degree</th>
-                    </thead>
-                    <tr>
-                        <td>College</td>
-                        <td>Karpagam college of Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Degree</td>
-                        <td>Bachelor of Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Field of study</td>
-                        <td>Electronis and communication Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Year of study</td>
-                        <td>2020 - 2024</td>
-                    </tr>
-                    <tr>
-                        <td>CGPA</td>
-                        <td>8.51</td>
-                    </tr>
-                </table>
-
-            </div>
-            <div className='12th'>
-                <table>
-                    <thead>
-                        <th colSpan={2} className={`${theme}`}>Higher Secondary Education</th>
-                    </thead>
-                    <tr>
-                        <td>School</td>
-                        <td>Sri Ragavendra matriculation higher secondary school</td>
-                    </tr>
-                    <tr>
-                        <td>Standard</td>
-                        <td>12<sup>th</sup></td>
-                    </tr>
-                    <tr>
-                        <td>Field of study</td>
-                        <td>Biology/Maths</td>
-                    </tr>
-                    <tr>
-                        <td>Year of study</td>
-                        <td>2020</td>
-                    </tr>
-                    <tr>
-                        <td>Percentage</td>
-                        <td>75.16</td>
-                    </tr>
-                </table>
-            </div>
-            <div className='10th'>
-                <table>
-                    <thead>
-                        <th colSpan={2} className={`${theme}`}>Secondary School Leaving Certificate</th>
-                    </thead>
-                    <tr>
-                        <td>School</td>
-                        <td>Sri Ragavendra matriculation higher secondary school</td>
-                    </tr>
-                    <tr>
-                        <td>Standard</td>
-                        <td>10<sup>th</sup></td>
-                    </tr>
-                    <tr>
-                        <td>Field of study</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>Year of study</td>
-                        <td>2018</td>
-                    </tr>
-                    <tr>
-                        <td>Percentage</td>
-                        <td>85.4</td>
-                    </tr>
-                </table>
-            </div>
-            <div className='schooling'>
-                <table>
-                    <thead>
-                        <th colSpan={2} className={`${theme}`}>Schooling</th>
-                    </thead>
-                    <tr>
-                        <td>School</td>
-                        <td>Sri Ragavendra matriculation higher secondary school</td>
-                    </tr>
-                    <tr>
-                        <td>Standard</td>
-                        <td>upto 9<sup>th</sup></td>
-                    </tr>
-                    <tr>
-                        <td>Field of study</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>Year of study</td>
-                        <td>upto 2017</td>
-                    </tr>
-                    <tr>
-                        <td>Percentage</td>
-                        <td>90</td>
-                    </tr>
-                </table>
+        <div className='border-b border-neutral-900 pb-4'>
+            <motion.h1 initial={{ opacity: 0, y: -100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} className='my-20 text-center text-4xl'>
+                Education
+            </motion.h1>
+            <div>
+                {EDUCATION.map((experience, index) => (
+                    <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
+                        <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, delay: 0.5 }} className='w-full lg:w-1/2'>
+                            <p className='mb-2 text-neutral-400 text-1xl'>{experience.name}</p>
+                        </motion.div>
+                        <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, delay: 0.5 }} className='w-full max-w-xl lg:w-3/4'>
+                            <h6 className='mb-2 font-semibold'>{experience.degree} - <span className='text-sm text-purple-100'>{experience.major}</span></h6>
+                            <p className='mb-4 text-neutral-400'>{experience.mark}</p>
+                            <p className='mb-4 text-neutral-400'>{experience.year}</p>
+                        </motion.div>
+                    </div>
+                ))}
             </div>
         </div>
     )

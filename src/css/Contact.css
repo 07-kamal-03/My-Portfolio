@@ -1,45 +1,4 @@
-.contact-title {
-    text-align: center;
-    padding-top: 30px;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 100px;
-    width: 100vw;
-
-}
-
-.contact-info {
-    width: 50%;
-}
-
-.contact-info p a {
-    text-decoration: none;
-}
-
-.contact-info ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.contact-info ul li {
-    padding-top: 10px;
-}
-
-.contact-info ul li img {
-    width: 20px;
-    height: 20px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .contact-scroll-container {
     width: 100%;
     overflow: hidden;
@@ -51,8 +10,8 @@
 .contact-scrolling-text {
     display: inline-block;
     font-weight: 600;
-    padding-left: 5%;
-    color: #ff2d61;
+    padding-left: 50%;
+    color: #ffffff;
     animation: scroll-left 20s linear infinite;
 }
 
@@ -95,6 +54,11 @@
     position: relative;
     width: 100%;
 }
+.input-wrapper input,.input-wrapper textarea{
+    color: #000;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
 
 .contact-form form label {
     margin-left: 5px;
@@ -102,6 +66,7 @@
     color: #a1a1a1;
     position: absolute;
     background-color: white;
+    border-radius: 1px;
     top: 7px;
     left: 5px;
     transition: .3s;
@@ -150,28 +115,12 @@
     border: 1px solid #0b57d0;
 }
 
-@media (max-width:1279px) {
-    .contact-container {
-        padding: 15px;
-    }
-}
-
-@media (max-width:768px) {
-    .contact-form form {
-        width: 250px;
-    }
-}
-
 @media (max-width:700px) {
-
-    .contact-container {
-        display: flex;
+    .contact-wrapper {
         flex-direction: column;
     }
-
-    .contact-info {
-        order: -1;
-        width: 100%;
-        margin-bottom: 50px;
+    .contact-wrapper form {
+        margin-top: 50px;
     }
+    
 }
