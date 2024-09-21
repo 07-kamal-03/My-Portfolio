@@ -6,3 +6,16 @@
 :root {
     font-family: "Inter", sans-serif;
 }
+.shiny-text {
+    background: linear-gradient(90deg, rgba(102, 102, 102, 0.6), rgba(192, 192, 192, 0.8), rgba(255, 255, 255, 0.6));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}

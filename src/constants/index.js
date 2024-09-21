@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a passionate Software Developer with a strong focus on front-end development, specializing in React.js and API integration. I thrive on building innovative, responsive web applications that solve real-world problems and enhance user experiences. My skills span web technologies, user interface design, and software optimization, enabling me to contribute effectively to diverse projects. I am driven to apply my potential in a dynamic environment, helping organizations grow through cutting-edge solutions and practical problem-solving.`;
 
@@ -32,6 +32,7 @@ export const PROJECTS = [
   {
     title: "Weather API",
     image: project1,
+    link: "https://weather-reactpage.netlify.app/",
     description:
       "Developed a dynamic weather app using React.js and integrated a weather API for real-time data. Enabled users to search weather by city, displaying temperature, humidity, wind speed, and forecasts. Implemented responsive design styling and optimized API handling for efficient data fetching. ",
     technologies: ["HTML", "CSS", "React.js"],
@@ -39,6 +40,7 @@ export const PROJECTS = [
   {
     title: "Currency convertor API",
     image: project2,
+    link: "https://currency-convertor-api.netlify.app/",
     description:
       "Developed a responsive currency converter app using React.js, integrating real-time data via a third-party API. Ensured a clean, user-friendly interface with dynamic currency selection and efficient data retrieval. Implemented responsive design styling and optimized API handling for efficient data fetching.",
     technologies: ["HTML", "CSS", "React.js"],
@@ -46,6 +48,7 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: project3,
+    link: "https://my-portfolio-responsive-site.netlify.app/",
     description:
       " Developed a responsive personal website using React.js to showcase skills and professional journey. Implemented dynamic layout and React reusable components, Api integration and also Rest Api integration for optimal user experience across devices and also implemented the backend configuration (fullstack). Focused on modern design principles, ensuring an intuitive and visually appealing interface.",
     technologies: ["HTML", "CSS", "Tailwind CSS", "React.js", "Spring Boot"],
@@ -53,6 +56,7 @@ export const PROJECTS = [
   {
     title: "Hackathon clone",
     image: project4,
+    link: "https://hackathon-fe.onrender.com/",
     description:
       "I developed a Hackathon Clone project featuring full CRUD functionality for organizers to create, edit, and delete hackathons. Each hackathon includes key details like name, start and end dates, description, image, and level (easy, medium, hard). The platform supports sorting (newest/oldest), filtering by status (active, upcoming, past) and difficulty level, and searching by name. Active and upcoming hackathons display timers, while past hackathons show event dates. Users can view detailed hackathon pages with edit and delete options. The project integrates APIs with a Node.js backend and is fully responsive, ensuring a seamless experience across devices. This project strengthened my skills in React.js, Node.js, API integration, and responsive web design.",
     technologies: ["HTML", "CSS", "React.js", "Node.js"],

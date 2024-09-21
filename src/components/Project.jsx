@@ -10,7 +10,7 @@ export const Project = () => {
                     <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
                         <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }} className='w-full lg:w-1/4'>
-                            <img src={project.image} width={150} height={150} alt={project.title} className='mb-6 rounded' />
+                            <a href={project.link} target='_blank'><img src={project.image} width={150} height={150} alt={project.title} className='mb-6 rounded' /></a>
                         </motion.div>
                         <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.5 }} className='w-full max-w-xl lg:w-3/4'>
