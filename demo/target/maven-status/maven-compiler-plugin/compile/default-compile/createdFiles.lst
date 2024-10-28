@@ -1,0 +1,5 @@
+com\example\demo\DemoApplication.class
+com\example\demo\EmailRequest.class
+com\example\demo\WebConfig.class
+com\example\demo\EmailController.class
+com\example\demo\ServerPortCustomizer.class
