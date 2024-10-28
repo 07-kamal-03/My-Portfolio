@@ -1,4 +1,7 @@
 FROM openjdk:22-jdk AS build
+RUN apt-get update && \
+    apt-get install -y maven && \
+    apt-get clean
 COPY . .
 RUN mvn clean package -DskipTests
 
